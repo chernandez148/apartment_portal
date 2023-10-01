@@ -1,0 +1,67 @@
+.side-nav {
+    width: 10%;
+    background-color: #1a2e3c;
+    transition: left .5s ease-in-out;
+    overflow-y: auto;
+}
+
+.side-nav h5 {
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.side-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav li {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ffffff5e;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-nav button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: 0;
+    padding: 0.5rem;
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .side-nav {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .side-nav {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .side-nav {
+        position: absolute;
+        width: 170px;
+        left: -170px;
+        z-index: 3;
+    }
+
+    .side-nav button {
+        display: initial;
+    }
+}

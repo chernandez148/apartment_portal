@@ -1,0 +1,93 @@
+.edit_unit {
+    width: 100%;
+    position: absolute;
+    height: 100svh;
+    top: 0;
+    left: 0;
+    background: #000000d1;
+    overflow-y: auto
+}
+
+.edit_unit_wrapper {
+    margin: 3rem;
+    width: 300px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.edit_unit_wrapper .exit_button {
+    margin: 0;
+}
+
+.edit_unit_wrapper h4 {
+    font-weight: 500;
+    padding: 1rem 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.edit_unit_wrapper form {
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.edit_unit_wrapper form div {
+    padding-bottom: .5rem;
+}
+
+.edit_unit_wrapper label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.edit_unit_wrapper form input {
+    border-radius: 0;
+    border: 1px solid #c7c7c7;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.edit_unit_wrapper form input::placeholder {
+    color: rgb(201, 201, 201);
+    font-size: 12px;
+}
+
+.edit_unit_wrapper button {
+    margin: 1rem 0;
+}
+
+.edit_unit_wrapper .success_message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    background: #fbfbfb;
+    padding: 0 1.5rem;
+    box-shadow: 0 0 4px 3px #0000001a;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity .3s ease-out;
+    /* Instant fade in */
+}
+
+.success_message.opacity-1 {
+    opacity: 1;
+    transition: opacity 0s ease-out;
+    /* Gradual fade-out */
+}
+
+.edit_unit_wrapper .success_message h4 {
+    border-bottom: 0;
+    color: green;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+}

@@ -1,0 +1,80 @@
+@import url('../../../fonts/fonts.css');
+
+.dashboard-info {
+    width: 90%;
+    transition: backdrop-filter .5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    background: #f3f3f3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.user-info h5,
+.user-info span {
+    font-weight: 500;
+}
+
+.user-info button {
+    display: none;
+}
+
+.user-info-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1440px) {
+    .dashboard-info {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard-info {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .user-info {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .user-info h5 {
+        margin: .25rem 0;
+    }
+
+    .user-info-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .dashboard-info {
+        width: 100%;
+    }
+
+    .user-info {
+        flex-direction: row;
+    }
+
+    .user-info button {
+        display: initial;
+        border: 0;
+        background-color: transparent;
+        padding-right: 1.5rem;
+    }
+
+    .backdrop-brighness-5 {
+        backdrop-filter: brightness(0.5);
+    }
+
+}

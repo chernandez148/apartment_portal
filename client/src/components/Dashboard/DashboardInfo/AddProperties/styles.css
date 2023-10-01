@@ -1,0 +1,64 @@
+.add_properties {
+    margin: 3rem;
+    width: 300px;
+    background: white;
+}
+
+.add_properties h4 {
+    font-weight: 500;
+    padding: 1rem 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.add_properties form {
+    padding: 1rem;
+}
+
+.add_properties label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.add_properties form input {
+    border-radius: 0;
+    border: 1px solid #c7c7c7;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.add_properties form input::placeholder {
+    color: #c7c7c7;
+    font-size: 12px;
+}
+
+.add_properties button {
+    margin: 1rem 0;
+}
+
+.add_properties .success_message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    background: #fbfbfb;
+    padding: 0 1.5rem;
+    box-shadow: 0 0 4px 3px #0000001a;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity .3s ease-out;
+    /* Instant fade in */
+}
+
+.success_message.opacity-1 {
+    opacity: 1;
+    transition: opacity 0s ease-out;
+    /* Gradual fade-out */
+}
+
+.add_properties .success_message h4 {
+    border-bottom: 0;
+    color: green;
+}
